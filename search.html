@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary and Thesaurus App</title>
+    
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('body2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        background: linear-gradient(to right, #d47800a2, #b34800);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: black;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(rgb(212, 127, 0), #b35700); /* Linear gradient background */
+        border-radius: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        align-items: center;
+    }
+
+    input[type="text"] {
+        width: 25%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        align-content: center;
+    }
+
+    button {
+        background-color: gray;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    button:hover {
+        background-color: white;
+    }
+
+    .box {
+        padding: 20px;
+        background: linear-gradient(to right, #d47800a2, #b34800);
+        border-radius: 10px;
+    }
+
+    #wordDetails h2 {
+        background-color: #0078d4;
+        color: white;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+        margin: -20px -20px 20px -20px;
+    }
+
+    p {
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 5px 0;
+    }
+
+    audio {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #relatedUrl {
+        color: #3c5d75;
+        text-decoration: none;
+    }
+
+    #relatedUrl:hover {
+        text-decoration: underline;
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: gray;
+        color: black;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        
+    }
+
+    .button:hover {
+        background-color: wheat;
+    }
+
+    .menu {
+    text-align: center;
+    padding: 10px;
+    }
+
+    .menu-button {
+        background-color: gray;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px;
+        font-weight: bold;
+    }
+
+    .menu-button:hover {
+        background-color: wheat;
+    }
+
+    /* Adjust the placement of the search bar */
+    h2 {
+        text-align: center;
+        margin-top: 20px; /* Adjust the margin to your preference */
+    }
+
+  </style>
+  
+    <h1>Dictionary and Thesaurus</h1>
+        <h2>Search for a word details!</h2>
+
+        <div style="text-align: center;">
+            
+            <input type="text" id="searchInput" placeholder="Enter a word">
+            <button id="searchButton">Search</button>
+
+        </div>
+        
+</head>
+<body>
+
+    <div class="container box"> 
+        <h2>Word Details:</h2>
+        <div>
+            <p><strong>Word:</strong> <span id="word"></span></p>
+            <p><strong>Phonetic:</strong> <span id="phonetic"></span></p>
+            <p><strong>Part of Speech:</strong> <span id="partOfSpeech"></span></p>
+            <p><strong>Meanings with Example:</strong></p>
+            <ul id="meanings"></ul>
+            <p><strong>Antonyms:</strong> <span id="antonyms"></span></p>
+            <p><strong>Example:</strong> <span id="example"></span></p>
+            <p><strong>Audio:</strong> <audio controls id="audio"><source id="audioSource" type="audio/mpeg">Your browser does not support the audio element.</audio></p>
+            <p><strong>Related URL:</strong> <a id="relatedUrl" target="_blank"></a></p>
+            <br></br>
+            <button id="restartButton" class="button" style="text-align: center;">Restart</button>
+            <a class='button' style="text-align: center;" href="homepage.html">Home</a>
+
+        </div>
+        
+    </div>
+    <script src="fetchApi.js"></script>
+    
+</body>
+</html>

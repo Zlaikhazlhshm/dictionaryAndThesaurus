@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('body2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background: linear-gradient(to right, #d47800a2, #b34800);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  padding: 50px;
+  text-align: center;
+}
+
+.mainWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(rgb(212, 127, 0), #b35700); /* Linear gradient background */
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+button {
+  background-color: gray;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: white;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: gray;
+  color: black;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: wheat;
+}
+
+/* Adjust the placement of the search bar */
+h2 {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin to your preference */
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Word Of The Day</title>
+    <link rel="stylesheet" href="index.css" />
+    <header><h1>Dictionary and Thesaurus</h1></header>
+  </head>
+  <body>
+    <div class="mainWrapper" >
+      <h2>Stay Motivated every day with a Word!</h2>
+      <p>Insert a word every day with the meanings</p>
+
+      <form>
+        <div class="form-group">
+          <label>Day</label>
+          <input id="fileName" type="text" class="form-control"><br></br>
+        </div>
+
+        <div class="form-group">
+          <label>Word</label>
+          <input id="word" type="text" class="form-control"><br></br>
+          <label>Meanings </label>
+          <textarea id="fileContents" class="form-control" rows="5"></textarea>
+        </div>
+      </form>
+      <button id="btnCreate" class="button">Create</button>
+      <button id="btnRead" class="button">Read</button>
+      <button id="btnUpdate" class="button">Update</button>
+      <button id="btnDelete" class="button">Delete</button><br></br>
+      <a class='button' style="align-items: center;" href="homepage.html">Home</a>
+
+      
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
